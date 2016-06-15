@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA64FCD11D1125140086EB49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64FCD01D1125140086EB49 /* AppDelegate.swift */; };
+		BA64FCD31D1125140086EB49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64FCD21D1125140086EB49 /* ViewController.swift */; };
+		BA64FCD61D1125140086EB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA64FCD41D1125140086EB49 /* Main.storyboard */; };
+		BA64FCD81D1125140086EB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA64FCD71D1125140086EB49 /* Assets.xcassets */; };
+		BA64FCDB1D1125140086EB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA64FCD91D1125140086EB49 /* LaunchScreen.storyboard */; };
+		BA64FCE61D1125140086EB49 /* Fresh_PotatoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64FCE51D1125140086EB49 /* Fresh_PotatoesTests.swift */; };
+		BA64FCF11D1125140086EB49 /* Fresh_PotatoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64FCF01D1125140086EB49 /* Fresh_PotatoesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA64FCE21D1125140086EB49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA64FCC51D1125140086EB49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA64FCCC1D1125140086EB49;
+			remoteInfo = "Fresh Potatoes";
+		};
+		BA64FCED1D1125140086EB49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA64FCC51D1125140086EB49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA64FCCC1D1125140086EB49;
+			remoteInfo = "Fresh Potatoes";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA64FCCD1D1125140086EB49 /* Fresh Potatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fresh Potatoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA64FCD01D1125140086EB49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA64FCD21D1125140086EB49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA64FCD51D1125140086EB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA64FCD71D1125140086EB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA64FCDA1D1125140086EB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA64FCDC1D1125140086EB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA64FCE11D1125140086EB49 /* Fresh PotatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fresh PotatoesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA64FCE51D1125140086EB49 /* Fresh_PotatoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fresh_PotatoesTests.swift; sourceTree = "<group>"; };
+		BA64FCE71D1125140086EB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA64FCEC1D1125140086EB49 /* Fresh PotatoesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fresh PotatoesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA64FCF01D1125140086EB49 /* Fresh_PotatoesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fresh_PotatoesUITests.swift; sourceTree = "<group>"; };
+		BA64FCF21D1125140086EB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA64FCCA1D1125140086EB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA64FCDE1D1125140086EB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA64FCE91D1125140086EB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA64FCC41D1125140086EB49 = {
+			isa = PBXGroup;
+			children = (
+				BA64FCCF1D1125140086EB49 /* Fresh Potatoes */,
+				BA64FCE41D1125140086EB49 /* Fresh PotatoesTests */,
+				BA64FCEF1D1125140086EB49 /* Fresh PotatoesUITests */,
+				BA64FCCE1D1125140086EB49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA64FCCE1D1125140086EB49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA64FCCD1D1125140086EB49 /* Fresh Potatoes.app */,
+				BA64FCE11D1125140086EB49 /* Fresh PotatoesTests.xctest */,
+				BA64FCEC1D1125140086EB49 /* Fresh PotatoesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA64FCCF1D1125140086EB49 /* Fresh Potatoes */ = {
+			isa = PBXGroup;
+			children = (
+				BA64FCD01D1125140086EB49 /* AppDelegate.swift */,
+				BA64FCD21D1125140086EB49 /* ViewController.swift */,
+				BA64FCD41D1125140086EB49 /* Main.storyboard */,
+				BA64FCD71D1125140086EB49 /* Assets.xcassets */,
+				BA64FCD91D1125140086EB49 /* LaunchScreen.storyboard */,
+				BA64FCDC1D1125140086EB49 /* Info.plist */,
+			);
+			path = "Fresh Potatoes";
+			sourceTree = "<group>";
+		};
+		BA64FCE41D1125140086EB49 /* Fresh PotatoesTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA64FCE51D1125140086EB49 /* Fresh_PotatoesTests.swift */,
+				BA64FCE71D1125140086EB49 /* Info.plist */,
+			);
+			path = "Fresh PotatoesTests";
+			sourceTree = "<group>";
+		};
+		BA64FCEF1D1125140086EB49 /* Fresh PotatoesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA64FCF01D1125140086EB49 /* Fresh_PotatoesUITests.swift */,
+				BA64FCF21D1125140086EB49 /* Info.plist */,
+			);
+			path = "Fresh PotatoesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA64FCCC1D1125140086EB49 /* Fresh Potatoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA64FCF51D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh Potatoes" */;
+			buildPhases = (
+				BA64FCC91D1125140086EB49 /* Sources */,
+				BA64FCCA1D1125140086EB49 /* Frameworks */,
+				BA64FCCB1D1125140086EB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fresh Potatoes";
+			productName = "Fresh Potatoes";
+			productReference = BA64FCCD1D1125140086EB49 /* Fresh Potatoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA64FCE01D1125140086EB49 /* Fresh PotatoesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA64FCF81D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh PotatoesTests" */;
+			buildPhases = (
+				BA64FCDD1D1125140086EB49 /* Sources */,
+				BA64FCDE1D1125140086EB49 /* Frameworks */,
+				BA64FCDF1D1125140086EB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA64FCE31D1125140086EB49 /* PBXTargetDependency */,
+			);
+			name = "Fresh PotatoesTests";
+			productName = "Fresh PotatoesTests";
+			productReference = BA64FCE11D1125140086EB49 /* Fresh PotatoesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA64FCEB1D1125140086EB49 /* Fresh PotatoesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA64FCFB1D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh PotatoesUITests" */;
+			buildPhases = (
+				BA64FCE81D1125140086EB49 /* Sources */,
+				BA64FCE91D1125140086EB49 /* Frameworks */,
+				BA64FCEA1D1125140086EB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA64FCEE1D1125140086EB49 /* PBXTargetDependency */,
+			);
+			name = "Fresh PotatoesUITests";
+			productName = "Fresh PotatoesUITests";
+			productReference = BA64FCEC1D1125140086EB49 /* Fresh PotatoesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA64FCC51D1125140086EB49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jessica Choi";
+				TargetAttributes = {
+					BA64FCCC1D1125140086EB49 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					BA64FCE01D1125140086EB49 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BA64FCCC1D1125140086EB49;
+					};
+					BA64FCEB1D1125140086EB49 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BA64FCCC1D1125140086EB49;
+					};
+				};
+			};
+			buildConfigurationList = BA64FCC81D1125140086EB49 /* Build configuration list for PBXProject "Fresh Potatoes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA64FCC41D1125140086EB49;
+			productRefGroup = BA64FCCE1D1125140086EB49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA64FCCC1D1125140086EB49 /* Fresh Potatoes */,
+				BA64FCE01D1125140086EB49 /* Fresh PotatoesTests */,
+				BA64FCEB1D1125140086EB49 /* Fresh PotatoesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA64FCCB1D1125140086EB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA64FCDB1D1125140086EB49 /* LaunchScreen.storyboard in Resources */,
+				BA64FCD81D1125140086EB49 /* Assets.xcassets in Resources */,
+				BA64FCD61D1125140086EB49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA64FCDF1D1125140086EB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA64FCEA1D1125140086EB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA64FCC91D1125140086EB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA64FCD31D1125140086EB49 /* ViewController.swift in Sources */,
+				BA64FCD11D1125140086EB49 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA64FCDD1D1125140086EB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA64FCE61D1125140086EB49 /* Fresh_PotatoesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA64FCE81D1125140086EB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA64FCF11D1125140086EB49 /* Fresh_PotatoesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA64FCE31D1125140086EB49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA64FCCC1D1125140086EB49 /* Fresh Potatoes */;
+			targetProxy = BA64FCE21D1125140086EB49 /* PBXContainerItemProxy */;
+		};
+		BA64FCEE1D1125140086EB49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA64FCCC1D1125140086EB49 /* Fresh Potatoes */;
+			targetProxy = BA64FCED1D1125140086EB49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA64FCD41D1125140086EB49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA64FCD51D1125140086EB49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA64FCD91D1125140086EB49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA64FCDA1D1125140086EB49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA64FCF31D1125140086EB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA64FCF41D1125140086EB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA64FCF61D1125140086EB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Fresh Potatoes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-Potatoes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA64FCF71D1125140086EB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Fresh Potatoes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-Potatoes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BA64FCF91D1125140086EB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Fresh PotatoesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-PotatoesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fresh Potatoes.app/Fresh Potatoes";
+			};
+			name = Debug;
+		};
+		BA64FCFA1D1125140086EB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Fresh PotatoesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-PotatoesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fresh Potatoes.app/Fresh Potatoes";
+			};
+			name = Release;
+		};
+		BA64FCFC1D1125140086EB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Fresh PotatoesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-PotatoesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Fresh Potatoes";
+			};
+			name = Debug;
+		};
+		BA64FCFD1D1125140086EB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Fresh PotatoesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-PotatoesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Fresh Potatoes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA64FCC81D1125140086EB49 /* Build configuration list for PBXProject "Fresh Potatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA64FCF31D1125140086EB49 /* Debug */,
+				BA64FCF41D1125140086EB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA64FCF51D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh Potatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA64FCF61D1125140086EB49 /* Debug */,
+				BA64FCF71D1125140086EB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA64FCF81D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh PotatoesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA64FCF91D1125140086EB49 /* Debug */,
+				BA64FCFA1D1125140086EB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA64FCFB1D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh PotatoesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA64FCFC1D1125140086EB49 /* Debug */,
+				BA64FCFD1D1125140086EB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA64FCC51D1125140086EB49 /* Project object */;
+}
