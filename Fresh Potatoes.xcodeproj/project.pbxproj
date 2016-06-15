@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAFC0C1F1D11F00A003B2345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0C1E1D11F00A003B2345 /* AppDelegate.swift */; };
+		BAFC0C211D11F00A003B2345 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0C201D11F00A003B2345 /* ViewController.swift */; };
+		BAFC0C241D11F00A003B2345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFC0C221D11F00A003B2345 /* Main.storyboard */; };
+		BAFC0C261D11F00A003B2345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFC0C251D11F00A003B2345 /* Assets.xcassets */; };
+		BAFC0C291D11F00A003B2345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFC0C271D11F00A003B2345 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BAFC0C1B1D11F00A003B2345 /* Fresh Potatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fresh Potatoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFC0C1E1D11F00A003B2345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAFC0C201D11F00A003B2345 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAFC0C231D11F00A003B2345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAFC0C251D11F00A003B2345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAFC0C281D11F00A003B2345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAFC0C2A1D11F00A003B2345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAFC0C181D11F00A003B2345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAFC0C121D11F00A003B2345 = {
+			isa = PBXGroup;
+			children = (
+				BAFC0C1D1D11F00A003B2345 /* Fresh Potatoes */,
+				BAFC0C1C1D11F00A003B2345 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAFC0C1C1D11F00A003B2345 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAFC0C1B1D11F00A003B2345 /* Fresh Potatoes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAFC0C1D1D11F00A003B2345 /* Fresh Potatoes */ = {
+			isa = PBXGroup;
+			children = (
+				BAFC0C1E1D11F00A003B2345 /* AppDelegate.swift */,
+				BAFC0C201D11F00A003B2345 /* ViewController.swift */,
+				BAFC0C221D11F00A003B2345 /* Main.storyboard */,
+				BAFC0C251D11F00A003B2345 /* Assets.xcassets */,
+				BAFC0C271D11F00A003B2345 /* LaunchScreen.storyboard */,
+				BAFC0C2A1D11F00A003B2345 /* Info.plist */,
+			);
+			path = "Fresh Potatoes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAFC0C1A1D11F00A003B2345 /* Fresh Potatoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAFC0C2D1D11F00A003B2345 /* Build configuration list for PBXNativeTarget "Fresh Potatoes" */;
+			buildPhases = (
+				BAFC0C171D11F00A003B2345 /* Sources */,
+				BAFC0C181D11F00A003B2345 /* Frameworks */,
+				BAFC0C191D11F00A003B2345 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fresh Potatoes";
+			productName = "Fresh Potatoes";
+			productReference = BAFC0C1B1D11F00A003B2345 /* Fresh Potatoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAFC0C131D11F00A003B2345 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jessica Choi";
+				TargetAttributes = {
+					BAFC0C1A1D11F00A003B2345 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BAFC0C161D11F00A003B2345 /* Build configuration list for PBXProject "Fresh Potatoes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAFC0C121D11F00A003B2345;
+			productRefGroup = BAFC0C1C1D11F00A003B2345 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAFC0C1A1D11F00A003B2345 /* Fresh Potatoes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAFC0C191D11F00A003B2345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFC0C291D11F00A003B2345 /* LaunchScreen.storyboard in Resources */,
+				BAFC0C261D11F00A003B2345 /* Assets.xcassets in Resources */,
+				BAFC0C241D11F00A003B2345 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAFC0C171D11F00A003B2345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFC0C211D11F00A003B2345 /* ViewController.swift in Sources */,
+				BAFC0C1F1D11F00A003B2345 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BAFC0C221D11F00A003B2345 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAFC0C231D11F00A003B2345 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAFC0C271D11F00A003B2345 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAFC0C281D11F00A003B2345 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAFC0C2B1D11F00A003B2345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAFC0C2C1D11F00A003B2345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAFC0C2E1D11F00A003B2345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Fresh Potatoes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-Potatoes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAFC0C2F1D11F00A003B2345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Fresh Potatoes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-Potatoes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAFC0C161D11F00A003B2345 /* Build configuration list for PBXProject "Fresh Potatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFC0C2B1D11F00A003B2345 /* Debug */,
+				BAFC0C2C1D11F00A003B2345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAFC0C2D1D11F00A003B2345 /* Build configuration list for PBXNativeTarget "Fresh Potatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFC0C2E1D11F00A003B2345 /* Debug */,
+				BAFC0C2F1D11F00A003B2345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAFC0C131D11F00A003B2345 /* Project object */;
+}
