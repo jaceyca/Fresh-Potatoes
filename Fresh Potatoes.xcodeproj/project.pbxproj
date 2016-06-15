@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		8D6D7FBB0A61F117357F3090 /* Pods_Fresh_Potatoes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD26CD290FD2B87ADA6BFD5 /* Pods_Fresh_Potatoes.framework */; };
 		BAFC0C1F1D11F00A003B2345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0C1E1D11F00A003B2345 /* AppDelegate.swift */; };
 		BAFC0C241D11F00A003B2345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFC0C221D11F00A003B2345 /* Main.storyboard */; };
@@ -74,96 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				BAFC0C1B1D11F00A003B2345 /* Fresh Potatoes.app */,
-=======
-		BA64FCD11D1125140086EB49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64FCD01D1125140086EB49 /* AppDelegate.swift */; };
-		BA64FCD31D1125140086EB49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64FCD21D1125140086EB49 /* ViewController.swift */; };
-		BA64FCD61D1125140086EB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA64FCD41D1125140086EB49 /* Main.storyboard */; };
-		BA64FCD81D1125140086EB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA64FCD71D1125140086EB49 /* Assets.xcassets */; };
-		BA64FCDB1D1125140086EB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA64FCD91D1125140086EB49 /* LaunchScreen.storyboard */; };
-		BA64FCE61D1125140086EB49 /* Fresh_PotatoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64FCE51D1125140086EB49 /* Fresh_PotatoesTests.swift */; };
-		BA64FCF11D1125140086EB49 /* Fresh_PotatoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64FCF01D1125140086EB49 /* Fresh_PotatoesUITests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BA64FCE21D1125140086EB49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA64FCC51D1125140086EB49 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA64FCCC1D1125140086EB49;
-			remoteInfo = "Fresh Potatoes";
-		};
-		BA64FCED1D1125140086EB49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA64FCC51D1125140086EB49 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA64FCCC1D1125140086EB49;
-			remoteInfo = "Fresh Potatoes";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		BA64FCCD1D1125140086EB49 /* Fresh Potatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fresh Potatoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA64FCD01D1125140086EB49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA64FCD21D1125140086EB49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA64FCD51D1125140086EB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BA64FCD71D1125140086EB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BA64FCDA1D1125140086EB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BA64FCDC1D1125140086EB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA64FCE11D1125140086EB49 /* Fresh PotatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fresh PotatoesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA64FCE51D1125140086EB49 /* Fresh_PotatoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fresh_PotatoesTests.swift; sourceTree = "<group>"; };
-		BA64FCE71D1125140086EB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA64FCEC1D1125140086EB49 /* Fresh PotatoesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fresh PotatoesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA64FCF01D1125140086EB49 /* Fresh_PotatoesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fresh_PotatoesUITests.swift; sourceTree = "<group>"; };
-		BA64FCF21D1125140086EB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		BA64FCCA1D1125140086EB49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA64FCDE1D1125140086EB49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA64FCE91D1125140086EB49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		BA64FCC41D1125140086EB49 = {
-			isa = PBXGroup;
-			children = (
-				BA64FCCF1D1125140086EB49 /* Fresh Potatoes */,
-				BA64FCE41D1125140086EB49 /* Fresh PotatoesTests */,
-				BA64FCEF1D1125140086EB49 /* Fresh PotatoesUITests */,
-				BA64FCCE1D1125140086EB49 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		BA64FCCE1D1125140086EB49 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BA64FCCD1D1125140086EB49 /* Fresh Potatoes.app */,
-				BA64FCE11D1125140086EB49 /* Fresh PotatoesTests.xctest */,
-				BA64FCEC1D1125140086EB49 /* Fresh PotatoesUITests.xctest */,
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		BAFC0C1D1D11F00A003B2345 /* Fresh Potatoes */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,22 +87,10 @@
 				BAFC0C251D11F00A003B2345 /* Assets.xcassets */,
 				BAFC0C271D11F00A003B2345 /* LaunchScreen.storyboard */,
 				BAFC0C2A1D11F00A003B2345 /* Info.plist */,
-=======
-		BA64FCCF1D1125140086EB49 /* Fresh Potatoes */ = {
-			isa = PBXGroup;
-			children = (
-				BA64FCD01D1125140086EB49 /* AppDelegate.swift */,
-				BA64FCD21D1125140086EB49 /* ViewController.swift */,
-				BA64FCD41D1125140086EB49 /* Main.storyboard */,
-				BA64FCD71D1125140086EB49 /* Assets.xcassets */,
-				BA64FCD91D1125140086EB49 /* LaunchScreen.storyboard */,
-				BA64FCDC1D1125140086EB49 /* Info.plist */,
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			);
 			path = "Fresh Potatoes";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		BAFC0C321D11F728003B2345 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,30 +105,11 @@
 				BAFC0C301D11F075003B2345 /* MoviesViewController.swift */,
 			);
 			name = "View Controllers";
-=======
-		BA64FCE41D1125140086EB49 /* Fresh PotatoesTests */ = {
-			isa = PBXGroup;
-			children = (
-				BA64FCE51D1125140086EB49 /* Fresh_PotatoesTests.swift */,
-				BA64FCE71D1125140086EB49 /* Info.plist */,
-			);
-			path = "Fresh PotatoesTests";
-			sourceTree = "<group>";
-		};
-		BA64FCEF1D1125140086EB49 /* Fresh PotatoesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BA64FCF01D1125140086EB49 /* Fresh_PotatoesUITests.swift */,
-				BA64FCF21D1125140086EB49 /* Info.plist */,
-			);
-			path = "Fresh PotatoesUITests";
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-<<<<<<< HEAD
 		BAFC0C1A1D11F00A003B2345 /* Fresh Potatoes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAFC0C2D1D11F00A003B2345 /* Build configuration list for PBXNativeTarget "Fresh Potatoes" */;
@@ -238,15 +120,6 @@
 				BAFC0C191D11F00A003B2345 /* Resources */,
 				698CB2D91284AFFC947CEE37 /* [CP] Embed Pods Frameworks */,
 				710315E3211E017DB83F7730 /* [CP] Copy Pods Resources */,
-=======
-		BA64FCCC1D1125140086EB49 /* Fresh Potatoes */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA64FCF51D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh Potatoes" */;
-			buildPhases = (
-				BA64FCC91D1125140086EB49 /* Sources */,
-				BA64FCCA1D1125140086EB49 /* Frameworks */,
-				BA64FCCB1D1125140086EB49 /* Resources */,
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			);
 			buildRules = (
 			);
@@ -254,7 +127,6 @@
 			);
 			name = "Fresh Potatoes";
 			productName = "Fresh Potatoes";
-<<<<<<< HEAD
 			productReference = BAFC0C1B1D11F00A003B2345 /* Fresh Potatoes.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -262,80 +134,18 @@
 
 /* Begin PBXProject section */
 		BAFC0C131D11F00A003B2345 /* Project object */ = {
-=======
-			productReference = BA64FCCD1D1125140086EB49 /* Fresh Potatoes.app */;
-			productType = "com.apple.product-type.application";
-		};
-		BA64FCE01D1125140086EB49 /* Fresh PotatoesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA64FCF81D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh PotatoesTests" */;
-			buildPhases = (
-				BA64FCDD1D1125140086EB49 /* Sources */,
-				BA64FCDE1D1125140086EB49 /* Frameworks */,
-				BA64FCDF1D1125140086EB49 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA64FCE31D1125140086EB49 /* PBXTargetDependency */,
-			);
-			name = "Fresh PotatoesTests";
-			productName = "Fresh PotatoesTests";
-			productReference = BA64FCE11D1125140086EB49 /* Fresh PotatoesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BA64FCEB1D1125140086EB49 /* Fresh PotatoesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA64FCFB1D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh PotatoesUITests" */;
-			buildPhases = (
-				BA64FCE81D1125140086EB49 /* Sources */,
-				BA64FCE91D1125140086EB49 /* Frameworks */,
-				BA64FCEA1D1125140086EB49 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA64FCEE1D1125140086EB49 /* PBXTargetDependency */,
-			);
-			name = "Fresh PotatoesUITests";
-			productName = "Fresh PotatoesUITests";
-			productReference = BA64FCEC1D1125140086EB49 /* Fresh PotatoesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		BA64FCC51D1125140086EB49 /* Project object */ = {
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Jessica Choi";
 				TargetAttributes = {
-<<<<<<< HEAD
 					BAFC0C1A1D11F00A003B2345 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
 			buildConfigurationList = BAFC0C161D11F00A003B2345 /* Build configuration list for PBXProject "Fresh Potatoes" */;
-=======
-					BA64FCCC1D1125140086EB49 = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					BA64FCE01D1125140086EB49 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = BA64FCCC1D1125140086EB49;
-					};
-					BA64FCEB1D1125140086EB49 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = BA64FCCC1D1125140086EB49;
-					};
-				};
-			};
-			buildConfigurationList = BA64FCC81D1125140086EB49 /* Build configuration list for PBXProject "Fresh Potatoes" */;
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -343,29 +153,17 @@
 				en,
 				Base,
 			);
-<<<<<<< HEAD
 			mainGroup = BAFC0C121D11F00A003B2345;
 			productRefGroup = BAFC0C1C1D11F00A003B2345 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BAFC0C1A1D11F00A003B2345 /* Fresh Potatoes */,
-=======
-			mainGroup = BA64FCC41D1125140086EB49;
-			productRefGroup = BA64FCCE1D1125140086EB49 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				BA64FCCC1D1125140086EB49 /* Fresh Potatoes */,
-				BA64FCE01D1125140086EB49 /* Fresh PotatoesTests */,
-				BA64FCEB1D1125140086EB49 /* Fresh PotatoesUITests */,
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-<<<<<<< HEAD
 		BAFC0C191D11F00A003B2345 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,103 +232,24 @@
 				BAFC0C1F1D11F00A003B2345 /* AppDelegate.swift in Sources */,
 				BAFC0C311D11F075003B2345 /* MoviesViewController.swift in Sources */,
 				BAFC0C341D11F93E003B2345 /* MovieCell.swift in Sources */,
-=======
-		BA64FCCB1D1125140086EB49 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA64FCDB1D1125140086EB49 /* LaunchScreen.storyboard in Resources */,
-				BA64FCD81D1125140086EB49 /* Assets.xcassets in Resources */,
-				BA64FCD61D1125140086EB49 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA64FCDF1D1125140086EB49 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA64FCEA1D1125140086EB49 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		BA64FCC91D1125140086EB49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA64FCD31D1125140086EB49 /* ViewController.swift in Sources */,
-				BA64FCD11D1125140086EB49 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA64FCDD1D1125140086EB49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA64FCE61D1125140086EB49 /* Fresh_PotatoesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA64FCE81D1125140086EB49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA64FCF11D1125140086EB49 /* Fresh_PotatoesUITests.swift in Sources */,
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-<<<<<<< HEAD
 /* Begin PBXVariantGroup section */
 		BAFC0C221D11F00A003B2345 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BAFC0C231D11F00A003B2345 /* Base */,
-=======
-/* Begin PBXTargetDependency section */
-		BA64FCE31D1125140086EB49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BA64FCCC1D1125140086EB49 /* Fresh Potatoes */;
-			targetProxy = BA64FCE21D1125140086EB49 /* PBXContainerItemProxy */;
-		};
-		BA64FCEE1D1125140086EB49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BA64FCCC1D1125140086EB49 /* Fresh Potatoes */;
-			targetProxy = BA64FCED1D1125140086EB49 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		BA64FCD41D1125140086EB49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA64FCD51D1125140086EB49 /* Base */,
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		BAFC0C271D11F00A003B2345 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BAFC0C281D11F00A003B2345 /* Base */,
-=======
-		BA64FCD91D1125140086EB49 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA64FCDA1D1125140086EB49 /* Base */,
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -538,11 +257,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-<<<<<<< HEAD
 		BAFC0C2B1D11F00A003B2345 /* Debug */ = {
-=======
-		BA64FCF31D1125140086EB49 /* Debug */ = {
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -587,11 +302,7 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
 		BAFC0C2C1D11F00A003B2345 /* Release */ = {
-=======
-		BA64FCF41D1125140086EB49 /* Release */ = {
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -629,14 +340,9 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
 		BAFC0C2E1D11F00A003B2345 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 63636706BEEB8124D34EBF2D /* Pods-Fresh Potatoes.debug.xcconfig */;
-=======
-		BA64FCF61D1125140086EB49 /* Debug */ = {
-			isa = XCBuildConfiguration;
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Fresh Potatoes/Info.plist";
@@ -646,14 +352,9 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
 		BAFC0C2F1D11F00A003B2345 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D6ECFD738BD10ED61A6B2B36 /* Pods-Fresh Potatoes.release.xcconfig */;
-=======
-		BA64FCF71D1125140086EB49 /* Release */ = {
-			isa = XCBuildConfiguration;
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Fresh Potatoes/Info.plist";
@@ -663,7 +364,6 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -672,67 +372,10 @@
 			buildConfigurations = (
 				BAFC0C2B1D11F00A003B2345 /* Debug */,
 				BAFC0C2C1D11F00A003B2345 /* Release */,
-=======
-		BA64FCF91D1125140086EB49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Fresh PotatoesTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-PotatoesTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fresh Potatoes.app/Fresh Potatoes";
-			};
-			name = Debug;
-		};
-		BA64FCFA1D1125140086EB49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Fresh PotatoesTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-PotatoesTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fresh Potatoes.app/Fresh Potatoes";
-			};
-			name = Release;
-		};
-		BA64FCFC1D1125140086EB49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Fresh PotatoesUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-PotatoesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Fresh Potatoes";
-			};
-			name = Debug;
-		};
-		BA64FCFD1D1125140086EB49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Fresh PotatoesUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Fresh-PotatoesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Fresh Potatoes";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		BA64FCC81D1125140086EB49 /* Build configuration list for PBXProject "Fresh Potatoes" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA64FCF31D1125140086EB49 /* Debug */,
-				BA64FCF41D1125140086EB49 /* Release */,
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<<<<<<< HEAD
 		BAFC0C2D1D11F00A003B2345 /* Build configuration list for PBXNativeTarget "Fresh Potatoes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -745,33 +388,4 @@
 /* End XCConfigurationList section */
 	};
 	rootObject = BAFC0C131D11F00A003B2345 /* Project object */;
-=======
-		BA64FCF51D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh Potatoes" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA64FCF61D1125140086EB49 /* Debug */,
-				BA64FCF71D1125140086EB49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		BA64FCF81D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh PotatoesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA64FCF91D1125140086EB49 /* Debug */,
-				BA64FCFA1D1125140086EB49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		BA64FCFB1D1125140086EB49 /* Build configuration list for PBXNativeTarget "Fresh PotatoesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA64FCFC1D1125140086EB49 /* Debug */,
-				BA64FCFD1D1125140086EB49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = BA64FCC51D1125140086EB49 /* Project object */;
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 }

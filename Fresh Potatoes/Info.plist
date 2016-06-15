@@ -36,12 +36,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-<<<<<<< HEAD
     <key>NSAppTransportSecurity</key>
     <dict>
         <key>NSAllowsArbitraryLoads</key><true/>
     </dict>
-=======
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 </dict>
 </plist>

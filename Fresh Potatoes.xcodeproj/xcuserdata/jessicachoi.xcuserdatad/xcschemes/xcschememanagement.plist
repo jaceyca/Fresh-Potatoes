@@ -12,21 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-<<<<<<< HEAD
 		<key>BAFC0C1A1D11F00A003B2345</key>
-=======
-		<key>BA64FCCC1D1125140086EB49</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BA64FCE01D1125140086EB49</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BA64FCEB1D1125140086EB49</key>
->>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 		<dict>
 			<key>primary</key>
 			<true/>
