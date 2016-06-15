@@ -2,7 +2,11 @@
 //  AppDelegate.swift
 //  Fresh Potatoes
 //
+<<<<<<< HEAD
 //  Created by Jessica Choi on 6/15/16.
+=======
+//  Created by Jessica Choi on 6/14/16.
+>>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
 //  Copyright © 2016 Jessica Choi. All rights reserved.
 //
 

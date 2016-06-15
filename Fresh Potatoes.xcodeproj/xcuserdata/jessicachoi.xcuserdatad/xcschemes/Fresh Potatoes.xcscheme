@@ -14,7 +14,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "BAFC0C1A1D11F00A003B2345"
+=======
+               BlueprintIdentifier = "BA64FCCC1D1125140086EB49"
+>>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
                BuildableName = "Fresh Potatoes.app"
                BlueprintName = "Fresh Potatoes"
                ReferencedContainer = "container:Fresh Potatoes.xcodeproj">
@@ -28,11 +32,38 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+<<<<<<< HEAD
+=======
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BA64FCE01D1125140086EB49"
+               BuildableName = "Fresh PotatoesTests.xctest"
+               BlueprintName = "Fresh PotatoesTests"
+               ReferencedContainer = "container:Fresh Potatoes.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BA64FCEB1D1125140086EB49"
+               BuildableName = "Fresh PotatoesUITests.xctest"
+               BlueprintName = "Fresh PotatoesUITests"
+               ReferencedContainer = "container:Fresh Potatoes.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+>>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "BAFC0C1A1D11F00A003B2345"
+=======
+            BlueprintIdentifier = "BA64FCCC1D1125140086EB49"
+>>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
             BuildableName = "Fresh Potatoes.app"
             BlueprintName = "Fresh Potatoes"
             ReferencedContainer = "container:Fresh Potatoes.xcodeproj">
@@ -55,7 +86,11 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "BAFC0C1A1D11F00A003B2345"
+=======
+            BlueprintIdentifier = "BA64FCCC1D1125140086EB49"
+>>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
             BuildableName = "Fresh Potatoes.app"
             BlueprintName = "Fresh Potatoes"
             ReferencedContainer = "container:Fresh Potatoes.xcodeproj">
@@ -74,7 +109,11 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "BAFC0C1A1D11F00A003B2345"
+=======
+            BlueprintIdentifier = "BA64FCCC1D1125140086EB49"
+>>>>>>> d2048d61cd06fa27d200c510181cbacb4e8f8d0a
             BuildableName = "Fresh Potatoes.app"
             BlueprintName = "Fresh Potatoes"
             ReferencedContainer = "container:Fresh Potatoes.xcodeproj">
