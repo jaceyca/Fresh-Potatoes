@@ -1,0 +1,6 @@
+framework module Pods_Fresh_Potatoes {
+  umbrella header "Pods-Fresh Potatoes-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D6D7FBB0A61F117357F3090 /* Pods_Fresh_Potatoes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD26CD290FD2B87ADA6BFD5 /* Pods_Fresh_Potatoes.framework */; };
 		BAFC0C1F1D11F00A003B2345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0C1E1D11F00A003B2345 /* AppDelegate.swift */; };
-		BAFC0C211D11F00A003B2345 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0C201D11F00A003B2345 /* ViewController.swift */; };
 		BAFC0C241D11F00A003B2345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFC0C221D11F00A003B2345 /* Main.storyboard */; };
 		BAFC0C261D11F00A003B2345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFC0C251D11F00A003B2345 /* Assets.xcassets */; };
 		BAFC0C291D11F00A003B2345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFC0C271D11F00A003B2345 /* LaunchScreen.storyboard */; };
+		BAFC0C311D11F075003B2345 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0C301D11F075003B2345 /* MoviesViewController.swift */; };
+		BAFC0C341D11F93E003B2345 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0C331D11F93E003B2345 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63636706BEEB8124D34EBF2D /* Pods-Fresh Potatoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fresh Potatoes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fresh Potatoes/Pods-Fresh Potatoes.debug.xcconfig"; sourceTree = "<group>"; };
 		BAFC0C1B1D11F00A003B2345 /* Fresh Potatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fresh Potatoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFC0C1E1D11F00A003B2345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BAFC0C201D11F00A003B2345 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BAFC0C231D11F00A003B2345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAFC0C251D11F00A003B2345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAFC0C281D11F00A003B2345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAFC0C2A1D11F00A003B2345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAFC0C301D11F075003B2345 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		BAFC0C331D11F93E003B2345 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		D6ECFD738BD10ED61A6B2B36 /* Pods-Fresh Potatoes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fresh Potatoes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fresh Potatoes/Pods-Fresh Potatoes.release.xcconfig"; sourceTree = "<group>"; };
+		FBD26CD290FD2B87ADA6BFD5 /* Pods_Fresh_Potatoes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fresh_Potatoes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6D7FBB0A61F117357F3090 /* Pods_Fresh_Potatoes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63E1EBC3155FFC9F1BF52C64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63636706BEEB8124D34EBF2D /* Pods-Fresh Potatoes.debug.xcconfig */,
+				D6ECFD738BD10ED61A6B2B36 /* Pods-Fresh Potatoes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0851B4DEF8FC4DBF9123E2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBD26CD290FD2B87ADA6BFD5 /* Pods_Fresh_Potatoes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAFC0C121D11F00A003B2345 = {
 			isa = PBXGroup;
 			children = (
 				BAFC0C1D1D11F00A003B2345 /* Fresh Potatoes */,
 				BAFC0C1C1D11F00A003B2345 /* Products */,
+				63E1EBC3155FFC9F1BF52C64 /* Pods */,
+				A0851B4DEF8FC4DBF9123E2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,31 @@
 		BAFC0C1D1D11F00A003B2345 /* Fresh Potatoes */ = {
 			isa = PBXGroup;
 			children = (
+				BAFC0C351D11F946003B2345 /* View Controllers */,
+				BAFC0C321D11F728003B2345 /* Views */,
 				BAFC0C1E1D11F00A003B2345 /* AppDelegate.swift */,
-				BAFC0C201D11F00A003B2345 /* ViewController.swift */,
 				BAFC0C221D11F00A003B2345 /* Main.storyboard */,
 				BAFC0C251D11F00A003B2345 /* Assets.xcassets */,
 				BAFC0C271D11F00A003B2345 /* LaunchScreen.storyboard */,
 				BAFC0C2A1D11F00A003B2345 /* Info.plist */,
 			);
 			path = "Fresh Potatoes";
+			sourceTree = "<group>";
+		};
+		BAFC0C321D11F728003B2345 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAFC0C331D11F93E003B2345 /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BAFC0C351D11F946003B2345 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BAFC0C301D11F075003B2345 /* MoviesViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAFC0C2D1D11F00A003B2345 /* Build configuration list for PBXNativeTarget "Fresh Potatoes" */;
 			buildPhases = (
+				7ACD8CC88B47DA1264E66687 /* [CP] Check Pods Manifest.lock */,
 				BAFC0C171D11F00A003B2345 /* Sources */,
 				BAFC0C181D11F00A003B2345 /* Frameworks */,
 				BAFC0C191D11F00A003B2345 /* Resources */,
+				698CB2D91284AFFC947CEE37 /* [CP] Embed Pods Frameworks */,
+				710315E3211E017DB83F7730 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +176,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		698CB2D91284AFFC947CEE37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fresh Potatoes/Pods-Fresh Potatoes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		710315E3211E017DB83F7730 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fresh Potatoes/Pods-Fresh Potatoes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ACD8CC88B47DA1264E66687 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BAFC0C171D11F00A003B2345 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAFC0C211D11F00A003B2345 /* ViewController.swift in Sources */,
 				BAFC0C1F1D11F00A003B2345 /* AppDelegate.swift in Sources */,
+				BAFC0C311D11F075003B2345 /* MoviesViewController.swift in Sources */,
+				BAFC0C341D11F93E003B2345 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +342,7 @@
 		};
 		BAFC0C2E1D11F00A003B2345 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63636706BEEB8124D34EBF2D /* Pods-Fresh Potatoes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Fresh Potatoes/Info.plist";
@@ -258,6 +354,7 @@
 		};
 		BAFC0C2F1D11F00A003B2345 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6ECFD738BD10ED61A6B2B36 /* Pods-Fresh Potatoes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Fresh Potatoes/Info.plist";
@@ -286,6 +383,7 @@
 				BAFC0C2F1D11F00A003B2345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
