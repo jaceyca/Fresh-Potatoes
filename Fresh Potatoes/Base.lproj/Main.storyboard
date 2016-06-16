@@ -82,7 +82,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <view alpha="0.80000000000000004" contentMode="scaleToFill" id="Ks3-JA-zvS">
+                                    <view alpha="0.69999999999999996" contentMode="scaleToFill" id="Ks3-JA-zvS">
                                         <rect key="frame" x="0.0" y="568" width="320" height="273"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -101,7 +101,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                             </scrollView>
