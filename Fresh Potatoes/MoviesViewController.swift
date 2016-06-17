@@ -224,7 +224,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPathForCell(cell)
         
-        let movie = movies![indexPath!.row]
+        let movie = filteredData![indexPath!.row]
         
         let detailViewController = segue.destinationViewController as! DetailViewController
         

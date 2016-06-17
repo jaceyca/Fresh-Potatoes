@@ -20,7 +20,7 @@ class MovieCell: UITableViewCell {
         // Initialization code
     }
 
-    let backView = UIView()
+//    let backView = UIView()
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
