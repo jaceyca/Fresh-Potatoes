@@ -80,11 +80,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             let imageUrl = NSURL(string: baseUrl + posterPath)
             let imageRequest = NSURLRequest(URL: imageUrl!)
             
-            let smallImageUrl = NSURL(string: "https://image.tmdb.org/t/p/w45" + posterPath)
-            let largeImageUrl = NSURL(string: "https://image.tmdb.org/t/p/original" + posterPath)
-            let smallImageRequest = NSURLRequest(URL: smallImageUrl!)
-            let largeImageRequest = NSURLRequest(URL: largeImageUrl!)
-            
             cell.posterView.setImageWithURLRequest(
                 imageRequest,
                 placeholderImage: nil,
