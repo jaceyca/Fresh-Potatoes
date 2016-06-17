@@ -8,4 +8,5 @@ target 'Fresh Potatoes' do
   # Pods for Fresh Potatoes
   pod 'AFNetworking'
   pod 'MBProgressHUD'
+  pod 'SVPullToRefresh'
 end

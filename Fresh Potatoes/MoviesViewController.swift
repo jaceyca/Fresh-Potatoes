@@ -10,26 +10,33 @@ import UIKit
 import AFNetworking
 import MBProgressHUD
 
-class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+
+class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UIScrollViewDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+//    @IBOutlet weak var movieCell: MovieCell!
     
     var movies: [NSDictionary]?
     var filteredData: [NSDictionary]?
     var endpoint: String!
+    var isMoreDataLoading = false
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         searchBar.delegate = self
-        
         searchBar.sizeToFit()
+//        movieCell.selectionStyle = .None
+//        movieCell.setHighlighted(false, animated: true)
         
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), forControlEvents: UIControlEvents.ValueChanged)
         tableView.insertSubview(refreshControl, atIndex: 0)
+        
+        
         
         //        let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
         //        let url = NSURL(string: "https://api.themoviedb.org/3/movie/\(endpoint)?api_key=\(apiKey)")
@@ -99,6 +106,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             let imageUrl = NSURL(string: baseUrl + posterPath)
             let imageRequest = NSURLRequest(URL: imageUrl!)
             
+            let smallImageUrl = NSURL(string: "https://image.tmdb.org/t/p/w45" + posterPath)
+            let largeImageUrl = NSURL(string: "https://image.tmdb.org/t/p/original" + posterPath)
+            let smallImageRequest = NSURLRequest(URL: smallImageUrl!)
+            let largeImageRequest = NSURLRequest(URL: largeImageUrl!)
+            
             cell.posterView.setImageWithURLRequest(
                 imageRequest,
                 placeholderImage: nil,
@@ -120,7 +132,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 failure: { (imageRequest, imageResponse, error) -> Void in
                     // do something for the failure condition
             })
-            
             cell.posterView.setImageWithURL(imageUrl!)
         }
         cell.overviewLabel.text = overview
@@ -129,6 +140,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         print ("row \(indexPath.row)")
         return cell
     }
+    
+    
+    
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String)
     {
@@ -177,9 +191,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
             delegate: nil,
             delegateQueue: NSOperationQueue.mainQueue()
-            )
-            
-            MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        )
+        
+        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         
         let task: NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: { (dataOrNil, response, error) in
             if let data = dataOrNil {
@@ -200,6 +214,26 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             }
         )
         task.resume()
+        
+    }
+    
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if(!isMoreDataLoading){
+            let scrollViewContentHeight = tableView.contentSize.height
+            let scrollOffsetThreshold = scrollViewContentHeight - tableView.bounds.size.height
+            
+            // When the user has scrolled past the threshold, start requesting
+            if(scrollView.contentOffset.y > scrollOffsetThreshold && tableView.dragging) {
+                isMoreDataLoading = true
+                let refreshControl = UIRefreshControl()
+                refreshControlAction(refreshControl)
+            }
+            
+        }
+        else{
+            
+        }
     }
     
     
