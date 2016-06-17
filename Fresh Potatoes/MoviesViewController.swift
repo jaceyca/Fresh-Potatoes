@@ -19,12 +19,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     var filteredData: [NSDictionary]?
     var endpoint: String!
     
-    let session = NSURLSession(
-        configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
-        delegate: nil,
-        delegateQueue: NSOperationQueue.mainQueue()
-    )
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -32,8 +26,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         searchBar.delegate = self
         
         searchBar.sizeToFit()
-        
-        session
         
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), forControlEvents: UIControlEvents.ValueChanged)
@@ -47,6 +39,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         //            timeoutInterval: 10)
         //
         //        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        //
+        //        let session = NSURLSession(
+        //            configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
+        //            delegate: nil,
+        //            delegateQueue: NSOperationQueue.mainQueue()
         //
         //
         //        let task: NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: { (dataOrNil, response, error) in
@@ -100,6 +97,30 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         if let posterPath = movie["poster_path"] as? String
         {
             let imageUrl = NSURL(string: baseUrl + posterPath)
+            let imageRequest = NSURLRequest(URL: imageUrl!)
+            
+            cell.posterView.setImageWithURLRequest(
+                imageRequest,
+                placeholderImage: nil,
+                success: { (imageRequest, imageResponse, image) -> Void in
+                    
+                    // imageResponse will be nil if the image is cached
+                    if imageResponse != nil {
+                        print("Image was NOT cached, fade in image")
+                        cell.posterView.alpha = 0.0
+                        cell.posterView.image = image
+                        UIView.animateWithDuration(0.3, animations: { () -> Void in
+                            cell.posterView.alpha = 1.0
+                        })
+                    } else {
+                        print("Image was cached so just update the image")
+                        cell.posterView.image = image
+                    }
+                },
+                failure: { (imageRequest, imageResponse, error) -> Void in
+                    // do something for the failure condition
+            })
+            
             cell.posterView.setImageWithURL(imageUrl!)
         }
         cell.overviewLabel.text = overview
@@ -135,6 +156,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         searchBar.text = ""
         searchBar.resignFirstResponder()
         NSLog("end of cancel")
+        filteredData = movies
         tableView.reloadData()
     }
     
@@ -144,8 +166,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         // Configure session so that completion handler is executed on main UI thread
         
-        session
-        
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
         let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
         let request = NSURLRequest(
@@ -153,7 +173,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
             timeoutInterval: 10)
         
-        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        let session = NSURLSession(
+            configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
+            delegate: nil,
+            delegateQueue: NSOperationQueue.mainQueue()
+            )
+            
+            MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         
         let task: NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: { (dataOrNil, response, error) in
             if let data = dataOrNil {
