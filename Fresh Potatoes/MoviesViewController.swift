@@ -31,38 +31,40 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.delegate = self
         searchBar.delegate = self
         
+        searchBar.sizeToFit()
+        
         session
         
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), forControlEvents: UIControlEvents.ValueChanged)
         tableView.insertSubview(refreshControl, atIndex: 0)
         
-//        let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-//        let url = NSURL(string: "https://api.themoviedb.org/3/movie/\(endpoint)?api_key=\(apiKey)")
-//        let request = NSURLRequest(
-//            URL: url!,
-//            cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
-//            timeoutInterval: 10)
-//        
-//        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-//        
-//        
-//        let task: NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: { (dataOrNil, response, error) in
-//            if let data = dataOrNil {
-//                if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
-//                    data, options:[]) as? NSDictionary {
-//                    print("response: \(responseDictionary)")
-//                    self.movies = responseDictionary["results"] as! [NSDictionary]
-//                    self.tableView.reloadData()
-//                    
-//                }
-//            }
-//            
-//            MBProgressHUD.hideHUDForView(self.view, animated: true)
-//            }
-//        )
-//        task.resume()
-//        
+        //        let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
+        //        let url = NSURL(string: "https://api.themoviedb.org/3/movie/\(endpoint)?api_key=\(apiKey)")
+        //        let request = NSURLRequest(
+        //            URL: url!,
+        //            cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
+        //            timeoutInterval: 10)
+        //
+        //        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        //
+        //
+        //        let task: NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: { (dataOrNil, response, error) in
+        //            if let data = dataOrNil {
+        //                if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
+        //                    data, options:[]) as? NSDictionary {
+        //                    print("response: \(responseDictionary)")
+        //                    self.movies = responseDictionary["results"] as! [NSDictionary]
+        //                    self.tableView.reloadData()
+        //
+        //                }
+        //            }
+        //
+        //            MBProgressHUD.hideHUDForView(self.view, animated: true)
+        //            }
+        //        )
+        //        task.resume()
+        //
         
         refreshControlAction(refreshControl)
         // Do any additional setup after loading the view.
@@ -120,68 +122,81 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             }
         })
         tableView.reloadData()
+        
+    }
     
-}
-
-
-func refreshControlAction(refreshControl: UIRefreshControl) {
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        self.searchBar.showsCancelButton = true
+        tableView.reloadData()
+    }
     
-    // ... Create the NSURLRequest (myRequest) ...
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+        NSLog("end of cancel")
+        tableView.reloadData()
+    }
     
-    // Configure session so that completion handler is executed on main UI thread
-    
-    session
-    
-    let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-    let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
-    let request = NSURLRequest(
-        URL: url!,
-        cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
-        timeoutInterval: 10)
-    
-    MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-
-    let task: NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: { (dataOrNil, response, error) in
-        if let data = dataOrNil {
-            if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
-                data, options:[]) as? NSDictionary {
-                print("response: \(responseDictionary)")
-                self.movies = responseDictionary["results"] as! [NSDictionary]
-                self.filteredData = self.movies
-                self.tableView.reloadData()
-                
+    func refreshControlAction(refreshControl: UIRefreshControl) {
+        
+        // ... Create the NSURLRequest (myRequest) ...
+        
+        // Configure session so that completion handler is executed on main UI thread
+        
+        session
+        
+        let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
+        let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
+        let request = NSURLRequest(
+            URL: url!,
+            cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
+            timeoutInterval: 10)
+        
+        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        
+        let task: NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: { (dataOrNil, response, error) in
+            if let data = dataOrNil {
+                if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
+                    data, options:[]) as? NSDictionary {
+                    print("response: \(responseDictionary)")
+                    self.movies = responseDictionary["results"] as! [NSDictionary]
+                    self.filteredData = self.movies
+                    self.tableView.reloadData()
+                    
+                }
             }
-        }
-        MBProgressHUD.hideHUDForView(self.view, animated: true)
-
-        self.tableView.reloadData()
-        refreshControl.endRefreshing()
-        }
-    )
-    task.resume()
-}
-
-
-
-// MARK: - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    
-    let cell = sender as! UITableViewCell
-    let indexPath = tableView.indexPathForCell(cell)
-    
-    let movie = movies![indexPath!.row]
-    
-    let detailViewController = segue.destinationViewController as! DetailViewController
-    
-    detailViewController.movie = movie
+            
+            MBProgressHUD.hideHUDForView(self.view, animated: true)
+            
+            self.tableView.reloadData()
+            refreshControl.endRefreshing()
+            }
+        )
+        task.resume()
+    }
     
     
     
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-}
-
-
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPathForCell(cell)
+        
+        let movie = movies![indexPath!.row]
+        
+        let detailViewController = segue.destinationViewController as! DetailViewController
+        
+        detailViewController.movie = movie
+        
+        
+        
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    
+    
 }
