@@ -19,10 +19,16 @@ class MovieCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+
+    let backView = UIView()
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        self.selectionStyle = .None
+//        backView.backgroundColor = UIColor.blueColor()
+//        self.selectedBackgroundView = backView
+//        self.setHighlighted(true, animated: false)
+        
         // Configure the view for the selected state
     }
 

@@ -13,9 +13,10 @@ import MBProgressHUD
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UIScrollViewDelegate {
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var networkLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-//    @IBOutlet weak var movieCell: MovieCell!
     
     var movies: [NSDictionary]?
     var filteredData: [NSDictionary]?
@@ -29,48 +30,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.delegate = self
         searchBar.delegate = self
         searchBar.sizeToFit()
-//        movieCell.selectionStyle = .None
-//        movieCell.setHighlighted(false, animated: true)
+        networkLabel.hidden = true
+        
+//        collectionView.dataSource = self
+        
         
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), forControlEvents: UIControlEvents.ValueChanged)
         tableView.insertSubview(refreshControl, atIndex: 0)
-        
-        
-        
-        //        let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        //        let url = NSURL(string: "https://api.themoviedb.org/3/movie/\(endpoint)?api_key=\(apiKey)")
-        //        let request = NSURLRequest(
-        //            URL: url!,
-        //            cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
-        //            timeoutInterval: 10)
-        //
-        //        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-        //
-        //        let session = NSURLSession(
-        //            configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
-        //            delegate: nil,
-        //            delegateQueue: NSOperationQueue.mainQueue()
-        //
-        //
-        //        let task: NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: { (dataOrNil, response, error) in
-        //            if let data = dataOrNil {
-        //                if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
-        //                    data, options:[]) as? NSDictionary {
-        //                    print("response: \(responseDictionary)")
-        //                    self.movies = responseDictionary["results"] as! [NSDictionary]
-        //                    self.tableView.reloadData()
-        //
-        //                }
-        //            }
-        //
-        //            MBProgressHUD.hideHUDForView(self.view, animated: true)
-        //            }
-        //        )
-        //        task.resume()
-        //
-        
         refreshControlAction(refreshControl)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -121,7 +90,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                         print("Image was NOT cached, fade in image")
                         cell.posterView.alpha = 0.0
                         cell.posterView.image = image
-                        UIView.animateWithDuration(0.3, animations: { () -> Void in
+                        UIView.animateWithDuration(1.0, animations: { () -> Void in
                             cell.posterView.alpha = 1.0
                         })
                     } else {
@@ -156,13 +125,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 return false
             }
         })
+        self.searchBar.showsCancelButton = true
         tableView.reloadData()
         
     }
     
-    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
-        self.searchBar.showsCancelButton = true
-        tableView.reloadData()
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchBar.becomeFirstResponder()
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
@@ -181,7 +150,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         // Configure session so that completion handler is executed on main UI thread
         
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
+        let url = NSURL(string: "https://api.themoviedb.org/3/movie/\(endpoint)?api_key=\(apiKey)")
         let request = NSURLRequest(
             URL: url!,
             cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
@@ -200,11 +169,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                     data, options:[]) as? NSDictionary {
                     print("response: \(responseDictionary)")
-                    self.movies = responseDictionary["results"] as! [NSDictionary]
-                    self.filteredData = self.movies
+                    self.movies = responseDictionary["results"] as? [NSDictionary]
+                    if self.searchBar.text == ""
+                    {
+                        self.filteredData = self.movies
+                    }
+                    else{
+                        self.searchBar(self.searchBar, textDidChange: self.searchBar.text!)
+                    }
                     self.tableView.reloadData()
-                    
+                    self.networkLabel.hidden = true
                 }
+            }
+            else{
+                self.networkLabel.hidden = false
             }
             
             MBProgressHUD.hideHUDForView(self.view, animated: true)

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D6D7FBB0A61F117357F3090 /* Pods_Fresh_Potatoes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD26CD290FD2B87ADA6BFD5 /* Pods_Fresh_Potatoes.framework */; };
 		BA0D68F81D1341B600E1A0B8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D68F71D1341B600E1A0B8 /* DetailViewController.swift */; };
+		BAC36F071D146C06005B0343 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC36F061D146C06005B0343 /* CollectionCell.swift */; };
 		BAFC0C1F1D11F00A003B2345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0C1E1D11F00A003B2345 /* AppDelegate.swift */; };
 		BAFC0C241D11F00A003B2345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFC0C221D11F00A003B2345 /* Main.storyboard */; };
 		BAFC0C261D11F00A003B2345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFC0C251D11F00A003B2345 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		63636706BEEB8124D34EBF2D /* Pods-Fresh Potatoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fresh Potatoes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fresh Potatoes/Pods-Fresh Potatoes.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0D68F71D1341B600E1A0B8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BAC36F061D146C06005B0343 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		BAFC0C1B1D11F00A003B2345 /* Fresh Potatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fresh Potatoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFC0C1E1D11F00A003B2345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAFC0C231D11F00A003B2345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				BAFC0C251D11F00A003B2345 /* Assets.xcassets */,
 				BAFC0C271D11F00A003B2345 /* LaunchScreen.storyboard */,
 				BAFC0C2A1D11F00A003B2345 /* Info.plist */,
+				BAC36F061D146C06005B0343 /* CollectionCell.swift */,
 			);
 			path = "Fresh Potatoes";
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				BAFC0C311D11F075003B2345 /* MoviesViewController.swift in Sources */,
 				BAFC0C341D11F93E003B2345 /* MovieCell.swift in Sources */,
 				BA0D68F81D1341B600E1A0B8 /* DetailViewController.swift in Sources */,
+				BAC36F071D146C06005B0343 /* CollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
