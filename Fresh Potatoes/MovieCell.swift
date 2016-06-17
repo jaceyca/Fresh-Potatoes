@@ -24,12 +24,26 @@ class MovieCell: UITableViewCell {
 
 //    let backView = UIView()
     
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        initViews()
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initViews()
+    }
+    
+    func initViews() {
+        selectedBackgroundView=UIView(frame: frame)
+        selectedBackgroundView!.backgroundColor = UIColor(red: 0.5, green: 0.7, blue: 0.9, alpha: 0.5)
+    }
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        self.selectionStyle = .None
-//        backView.backgroundColor = UIColor.blueColor()
-//        self.selectedBackgroundView = backView
-//        self.setHighlighted(true, animated: false)
+//        self.selectionStyle = .None
+        self.setHighlighted(false, animated: false)
         
         // Configure the view for the selected state
     }

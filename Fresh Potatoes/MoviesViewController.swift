@@ -22,7 +22,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     var filteredData: [NSDictionary]?
     var endpoint: String!
     var isMoreDataLoading = false
+    var loadingMoreView:InfiniteScrollActivityView?
     
+    let refreshControl = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +37,18 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 //        collectionView.dataSource = self
         
         
-        let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), forControlEvents: UIControlEvents.ValueChanged)
         tableView.insertSubview(refreshControl, atIndex: 0)
         refreshControlAction(refreshControl)
+        
+        let frame = CGRectMake(0, tableView.contentSize.height, tableView.bounds.size.width, InfiniteScrollActivityView.defaultHeight)
+        loadingMoreView = InfiniteScrollActivityView(frame: frame)
+        loadingMoreView!.hidden = true
+        tableView.addSubview(loadingMoreView!)
+        
+        var insets = tableView.contentInset;
+        insets.bottom += InfiniteScrollActivityView.defaultHeight;
+        tableView.contentInset = insets
         
         // Do any additional setup after loading the view.
     }
@@ -151,7 +161,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let request = NSURLRequest(
             URL: url!,
             cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
-            timeoutInterval: 10)
+            timeoutInterval: 30)
         
         let session = NSURLSession(
             configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
@@ -174,6 +184,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                     else{
                         self.searchBar(self.searchBar, textDidChange: self.searchBar.text!)
                     }
+                    self.isMoreDataLoading = false
+                    self.loadingMoreView!.stopAnimating()
                     self.tableView.reloadData()
                     self.networkLabel.hidden = true
                 }
@@ -201,7 +213,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             // When the user has scrolled past the threshold, start requesting
             if(scrollView.contentOffset.y > scrollOffsetThreshold && tableView.dragging) {
                 isMoreDataLoading = true
-                let refreshControl = UIRefreshControl()
+                let frame = CGRectMake(0, tableView.contentSize.height, tableView.bounds.size.width, InfiniteScrollActivityView.defaultHeight)
+                loadingMoreView?.frame = frame
+                loadingMoreView!.startAnimating()
                 refreshControlAction(refreshControl)
             }
             
