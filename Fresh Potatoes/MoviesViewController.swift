@@ -68,6 +68,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let movie = filteredData![indexPath.row]
         let title = movie["title"] as! String
         let overview = movie["overview"] as! String
+        let vote_average = movie["vote_average"] as! Double
+        let vote_count = movie["vote_count"] as! Int
+        let rounded_vote_average = round((vote_average)/2)
+        cell.ratingsView.image = UIImage(named: "\(rounded_vote_average)stars")
+        
         
         let baseUrl = "http://image.tmdb.org/t/p/w500"
         if let posterPath = movie["poster_path"] as? String
@@ -87,14 +92,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                     
                     // imageResponse will be nil if the image is cached
                     if imageResponse != nil {
-                        print("Image was NOT cached, fade in image")
                         cell.posterView.alpha = 0.0
                         cell.posterView.image = image
                         UIView.animateWithDuration(1.0, animations: { () -> Void in
                             cell.posterView.alpha = 1.0
                         })
                     } else {
-                        print("Image was cached so just update the image")
                         cell.posterView.image = image
                     }
                 },
@@ -103,10 +106,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             })
             cell.posterView.setImageWithURL(imageUrl!)
         }
-        cell.overviewLabel.text = overview
+        // \(vote_average)/10 with
+        cell.overviewLabel.text = "\(vote_count) votes"
         cell.titleLabel.text = title
         
-        print ("row \(indexPath.row)")
         return cell
     }
     
@@ -138,7 +141,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         searchBar.showsCancelButton = false
         searchBar.text = ""
         searchBar.resignFirstResponder()
-        NSLog("end of cancel")
         filteredData = movies
         tableView.reloadData()
     }
