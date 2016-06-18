@@ -17,6 +17,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var networkLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     var movies: [NSDictionary]?
     var filteredData: [NSDictionary]?
@@ -33,9 +34,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         searchBar.delegate = self
         searchBar.sizeToFit()
         networkLabel.hidden = true
-        
-//        collectionView.dataSource = self
-        
+                
         
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), forControlEvents: UIControlEvents.ValueChanged)
         tableView.insertSubview(refreshControl, atIndex: 0)
@@ -249,3 +248,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     
 }
+
+
+
+
+

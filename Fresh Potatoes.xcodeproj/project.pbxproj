@@ -93,8 +93,6 @@
 				BAFC0C251D11F00A003B2345 /* Assets.xcassets */,
 				BAFC0C271D11F00A003B2345 /* LaunchScreen.storyboard */,
 				BAFC0C2A1D11F00A003B2345 /* Info.plist */,
-				BAC36F061D146C06005B0343 /* CollectionCell.swift */,
-				BAC36F0A1D14B649005B0343 /* InfiniteScrollActivityView.swift */,
 			);
 			path = "Fresh Potatoes";
 			sourceTree = "<group>";
@@ -102,7 +100,9 @@
 		BAFC0C321D11F728003B2345 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BAC36F0A1D14B649005B0343 /* InfiniteScrollActivityView.swift */,
 				BAFC0C331D11F93E003B2345 /* MovieCell.swift */,
+				BAC36F061D146C06005B0343 /* CollectionCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
